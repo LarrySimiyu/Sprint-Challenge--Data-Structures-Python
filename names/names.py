@@ -58,6 +58,6 @@ for name_2 in names_2:
             duplicates.append(name_2)
 
 end_time = time.time()
-print (f"{len(duplicates) - 1} duplicates:\n\n{', '.join(duplicates)}\n\n")
+print (f"{len(duplicates[1:])} duplicates:\n\n{', '.join(duplicates)}\n\n")
 print (f"runtime: {end_time - start_time} seconds")
 #larry
