@@ -49,7 +49,7 @@ f.close()
 
 duplicates = []
 
-BST = B_S_T(names_2[0])
+BST = B_S_T(names_1[0])
 for name_1 in names_1:
     BST.insert(name_1)
 
@@ -58,6 +58,6 @@ for name_2 in names_2:
             duplicates.append(name_2)
 
 end_time = time.time()
-print (f"{len(duplicates[1:])} duplicates:\n\n{', '.join(duplicates)}\n\n")
+print (f"{len(duplicates)} duplicates:\n\n{', '.join(duplicates)}\n\n")
 print (f"runtime: {end_time - start_time} seconds")
-#larry
+#BST is log n time 
